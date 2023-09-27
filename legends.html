@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends - My Favourite Game</title>
+    <style>
+        section{
+            padding: 60px 0;
+        }
+     </style>
+      <!-- Apex icon -->
+      <link rel="icon" href="img/Apex-Legends-Emblem.png" type="image/x-icon" />
+      <!-- Font Awesome -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      />
+      <!-- Google Fonts Roboto -->
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      />
+      <!-- MDB -->
+      <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+<body onload ="onLoad()">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!--changed from fluid to xxl-->
+      <div class="container-xxl">
+        <a href="./index.html" CLASS="navbar-brand">
+          <span class="fw-light text-light py-3" > 
+            <img
+            src="img/Apex-Legends-Emblem.png"
+            class="me-2"
+            height="40"
+            alt="Apex Legends"
+            loading="lazy"
+          />
+              Apex Legends - My favorite game
+
+          </span>
+      </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!---navbar links-->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">A Look at Some of the Legends</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./savedForLater.html">Saved for Later</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="leagends">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-12 text-center">
+                    <div class="display-3">A Look at some of the Legends</div>
+                    <img class="img-fluid rounded-4 shadow-2-strong mt-5" src="https://www.gamespot.com/a/uploads/original/1599/15997278/3874321-wraith.png" alt="apex legends character select screen">
+                </div>
+            </div>
+              <div class="container mt-5 text-center">
+                <div class="row justify-content-center align-items-center">
+                  <div class="card align-items-center">
+                    <p class="col-8">Each legend in the game has their own set of abilities, which are unique to that particular legend. Each legend also has a voice actor behind them that brings them to life. The game has a ping communication system where you are able to ping different items/ points of interest, and depending on which legend you are playing, that legend will have their own custom voiceline for that particular callout.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--wraith spotlight-->
+
+    <section id="wraith" class="bg-light">
+        <div class="container-md">
+            <div class="text-center">
+                <div class="display-3">Wraith</div>
+                <p class="lead text-muted">Interdimensional Skirmisher</p>
+            </div> 
+        
+
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-4">
+                    <img src="img/wraith.jpeg" class="img-fluid rounded-4 shadow-2-strong" alt="Wraith from Apex Legends">
+                </div>
+
+                <div class="col-lg-6">
+                <!---accordion-->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-mdb-toggle="collapse"
+                          data-mdb-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Tactical Ability
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Wraith is able to teleport into the void for a few seconds before returning back to the world. While she is in the void, she moves alot faster and is able to reappear in a new location. 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-mdb-toggle="collapse"
+                          data-mdb-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Passive Ability
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Wraith is able to hear another version of herself in an alternate dimension. This alternate version of herself is able to see her in a 3rd person perspective, and alerts her when someone is aiming at her that she can't see
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-mdb-toggle="collapse"
+                          data-mdb-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Ultimate Ability
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Wraith is able to make a portal starting from one location, and she is able to place it at another location. When she places the first entrance for the portal, she gains an enormous speed boost, and has this until the other side of the portal is placed. From there, Wraith, enemies, and her teammates can use the portal. The portal stays up for 30 seconds
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+          </div>
+        </div> 
+    </section>
+
+    <!--table-->
+
+    <section>
+        <div class="container">
+            <div class="display-3 text-center mb-5">Some other Legends</div>
+            <table class="table align-middle mb-0 bg-white">
+                <thead class="bg-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Abilities</th>
+                    <th>Difficulty</th>
+                    <th>Learn More</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                    <div class="d-flex align-items-center">
+                        <img
+                            src="img/rampart.png"
+                            alt="Rampart from Apex Legends"
+                            style="width: 45px; height: 45px"
+                            class="rounded-circle"
+                            />
+                        <div class="ms-3">
+                        <p class="fw-bold mb-1">Rampart</p>
+                        <p class="text-muted mb-0">Amped Modder</p>
+                        </div>
+                    </div>
+                    </td>
+                    <td>
+                    <p class="fw-normal mb-1">Controller</p>
+                    </td>
+                    <td>
+                    <span >Placeable walls, mobile turret, faster LMG reload speed</span>
+                    </td>
+                    <td>Medium</td>
+                    <td>
+                        <a href="https://www.ea.com/en-gb/games/apex-legends/about/characters/rampart" target="_blank">Learn More about Rampart Here</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class="d-flex align-items-center">
+                        <img
+                            src="img/pathfinder.png"
+                            class="rounded-circle"
+                            alt="Pathfinder from Apex Legends"
+                            style="width: 45px; height: 45px"
+                            />
+                        <div class="ms-3">
+                        <p class="fw-bold mb-1">Pathfinder</p>
+                        <p class="text-muted mb-0">Forward Scout</p>
+                        </div>
+                    </div>
+                    </td>
+                    <td>
+                    <p class="fw-normal mb-1">Skirmisher</p>
+                    
+                    </td>
+                    <td>
+                    <span> Grappel hook, Zipline gun, Care-package insider knowledge</span>
+                    </td>
+                    <td>Hard</td>
+                    <td>
+                        <a href="https://www.ea.com/en-gb/games/apex-legends/about/characters/pathfinder" target="_blank">Learn more about Pathfinder here</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class="d-flex align-items-center">
+                        <img
+                            src="img/Lifeline.png"
+                            class="rounded-circle"
+                            alt="LifeLine from Apex Legends"
+                            style="width: 45px; height: 45px"
+                            />
+                        <div class="ms-3">
+                        <p class="fw-bold mb-1">Lifeline</p>
+                        <p class="text-muted mb-0">Combat Medic</p>
+                        </div>
+                    </div>
+                    </td>
+                    <td>
+                    <p class="fw-normal mb-1">Support</p>
+                    </td>
+                    <td>
+                    <span>Placeable healing drone, Able to revive downed teammates quickly, Care package on demand</span>
+                    </td>
+                    <td>Easy</td>
+                    <td>
+                        <a href="https://www.ea.com/en-gb/games/apex-legends/about/characters/lifeline" target="_blank">Learn more about Lifeline here</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <!--footer-->
+    <footer class="text-center bg-light">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Form -->
+          <section>
+            <form>
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Sign up for my newsletter</strong>
+                  </p>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form5Example27" class="form-control" />
+                    <label class="form-label" for="form5Example27">Mario@example.com</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-danger mb-4">
+                    Subscribe
+                  </button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>
+          <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-dark">
+          © 2023 Copyright:
+          <a class="text-light" href="https://www.ea.com/en-gb" target="_blank">Electronic Arts</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"> </script>
+    <script type="text/javascript" src="js/myJs.js"></script>
+    
+</body>
+</html>

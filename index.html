@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Apex Legends - My Favourite Game</title>
+    <style>
+      section{
+          padding: 60px 0;
+      }
+   </style>
+    <!-- Apex icon -->
+    <link rel="icon" href="img/Apex-Legends-Emblem.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body onload ="onLoad()">
+    
+    <!---navbar component from mdb--->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!--changed from fluid to xxl-->
+      <div class="container-xxl">
+        <a href="#intro" CLASS="navbar-brand">
+          <span class="fw-light text-light py-3" > 
+            <img
+            src="img/Apex-Legends-Emblem.png"
+            class="me-2"
+            height="40"
+            alt="Apex Legends"
+            loading="lazy"
+          />
+              Apex Legends - My favorite game
+
+          </span>
+      </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!---navbar links-->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./legends.html">A Look at Some of the Legends</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./savedForLater.html">Saved for Later</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    <!---main intro-->
+    <section id="intro">
+      <div class="container">
+        <div class="row align-items-center">              <!---header component-->
+          <div class="text-center text-md-start">
+            <div class="text-center">
+                  <!--video being used as header background-->
+              <div class="bg-image">
+                <video class="w-100 p-0" autoplay loop muted>
+                  <source src="vids/apexvid.mp4" type="video/mp4" >
+                </video>
+                    <!--mask class for nice heading over video-->
+                    <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white">
+                          <img src="img/Apex-Legends-Emblem.png" alt="Apex Logo" width="100" class="mb-3">
+                          <div class="display-2">Apex Legends</div>
+                          <div class="display-6 text-muted my-1">My Favourite Game</div>
+                          <a class="btn btn-outline-light btn-lg mt-3" href="https://www.ea.com/en-gb/games/apex-legends" target="_blank" role="button"
+                          >Download</a>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--why I enjoy playing Apex Legends-->
+    <section class="lg mt-5 bg-light" id="ienjoyapex">
+      <div class="container">
+        <div class="text-center">
+          <div class="display-5 mb-5">Why I Enjoy Apex Legends</div>
+        </div>
+        <div class="card-group my-5">
+          <div class="card col-md-6" id="./index.html#gameplay">
+            <img src="img/apexpic7.png" class="card-img-top" alt="A gun from Apex Legends"/>
+            <div class="card-body">
+              <h5 class="card-title">Fluid, fast gameplay</h5>
+              <p class="card-text">The game is very fast paced compared to most other shooter titles, and has lots of different movement mechanics and techniques with varying skill level. 
+                Players are able to bounce off of walls, use ziplines, there is a robot character with a grappel hook, and the list goes on and on. This combined with the large amount of 
+                health makes it so that winners of fights are not based solely off of whoever shot first</p>
+            </div>
+            <div class="p-2 position-relative mt-5">                                                               <!---Unique data-id's for each 'save' button-->
+              <button type="button" class="btn btn-outline-secondary save-button position-absolute bottom-0 end-0 m-4" data-mdb-ripple-color="dark" data-id="fluid-fast-gameplay-article">Save for later</button>
+              <button class="like-button btn btn-danger btn-floating m-3" id="gameplayLike"><i class="far fa-heart fa-2x"></i></button>
+            </div>
+          </div>
+          <div class="card col-md-6" id="./index.html#characters">
+            <img src="img/apexrevelry.jpeg" class="card-img-top" alt="Apex Legends artwork"/>
+            <div class="card-body">
+              <h5 class="card-title">Growing Roster of Playable Characters</h5>
+              <p class="card-text">
+                This game has a growing roster of 23 playable characters, each with their own unique abilities and equipment.
+                This makes the game very team-oriented, as every player has their role
+              </p>
+            </div>
+            <div class="p-2 position-relative mt-5">                                                               <!---Unique data-id's for each 'save' button-->
+              <button type="button" class="btn btn-outline-secondary save-button position-absolute bottom-0 end-0 m-4" data-mdb-ripple-color="dark" data-id="fluid-fast-gameplay-article">Save for later</button>
+              <button class="like-button btn btn-danger btn-floating m-3 p" id="charactersLike"><i class="far fa-heart fa-2x"></i></button>
+            </div>
+          </div>
+          <div class="card col-md-6" id="./index.html#ranked">
+            <img src="img/apexranks.webp" class="card-img-top" alt="Different Ranks in Apex Legends"/>
+            <div class="card-body">
+              <h5 class="card-title">Ranked Mode</h5>
+              <p class="card-text">
+                The game has a fantastic ranked mode where you gain ladder points for where you place among the 20 other teams in the match. Points are awarded for eliminating enemy squads aswell as winning the match for the most amount of points. If you lose a match early on in the game without getting any eliminations on other teams, you will lose points and go down the ladder. There are several ranks from rookie to apex predator rank(top 750 players). This gamemode creates a competitive atmosphere where team-play is essential to succeed, and every game ends up feeling like a tournament match. 
+              </p>
+            </div>
+            <div class="p-2 position-relative mt-5">                                                               <!---Unique data-id's for each 'save' button-->
+              <button type="button" class="btn btn-outline-secondary save-button position-absolute bottom-0 end-0 m-4" data-mdb-ripple-color="dark" data-id="fluid-fast-gameplay-article">Save for later</button>
+              <button class="like-button btn btn-danger btn-floating m-3" id="rankedLike"><i class="far fa-heart fa-2x"></i></button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!---testimonial-->
+    <section id="reviews">
+      <div class="container">
+        <div class="text-center">
+          <div class="row">
+            <div class="display-3 mb-5">Testimonials</div>
+                          <!-- Carousel Component -->
+            <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://assets-prd.ignimgs.com/avatars/5cf55bafcb64904b0ae52abb/Fs-hmIxaIAc-QAw-1680824141398.jpg" alt="avatar"
+                    style="width: 150px;" />
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                      <h5 class="mb-3">Stella Chung</h5>
+                      <p>Video Producer - IGN</p>
+                      <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        <a href="https://za.ign.com/apex-legends-2021-nintendo-switch/151396/review/apex-legends-review-2021">Apex Legends is squad-based battle royale done right, complete with cool heroes, a superb communication system, and polished mechanics.</a>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+                <div class="carousel-item">
+                  <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://cdn.mos.cms.futurecdn.net/RBKPGRRsgG9mLEXurR2uMG-300-80.jpg" alt="avatar"
+                    style="width: 150px;" />
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                      <h5 class="mb-3">James Davenport</h5>
+                      <p>Gaming Journalist for pcgamer.com</p>
+                      <p class="text-muted">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        <a href="https://www.pcgamer.com/apex-legends-review/">Apex is stable, spilling over with smart design touches, and its set a new industry standard with an impressive breadth of accessibility options and communication tools.</a>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="fas fa-star fa-sm"></i></li>
+                    <li><i class="far fa-star fa-sm"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+                data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+                data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contact form-->
+    <section id="contact" class="bg-light">
+      <div class="container-lg mt-5">
+          <div class="text-center ">
+              <h2>Get in Touch</h2>
+              <p class="lead">Questions to ask? Fill out the form to contact me directly</p>
+          </div>
+          <div class="row justify-content-center my-5">
+              <div class="col-lg-6">
+                  <form>
+                      <label for="email" class="form-label my-2">Email adress:</label>
+                      <div class="mb-4 input-group">
+                          <span class="input-group-text">
+                            <i class="far fa-envelope"></i>
+                          </span>
+                          <input type="email" class="form-control" id="email" placeholder="e.g.mario@example.com">
+                          
+                      </div>
+                      <label for="name" class="form-label my-2">Name:</label>
+                      <div class="input-group mb-4">
+                          <span class="input-group-text">
+                            <i class="fas fa-user"></i>
+                          </span>
+                          <input type="text" class="form-control" id="name" placeholder="eg. Mario">
+                         
+                          
+                      </div>
+                      <label for="subject" class="form-label my-2">What is your question about?</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        <label class="form-check-label" for="flexRadioDefault1"> Query about the game </label>
+                      </div>
+                      
+                      <!-- Default checked radio -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+                        <label class="form-check-label" for="flexRadioDefault2"> You think the game is bad </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+                        <label class="form-check-label" for="flexRadioDefault2"> You want to 1v1 me </label>
+                      </div>
+                      <div class="form-floating mb-4 mt-5">
+                          <textarea id="query" class="form-control" style="height: 140px"></textarea>
+                          <label for="query">Your query...</label>
+                      </div>
+                      <div class="m-4 text-center">
+                          <button type="submit" class="btn btn-danger">Submit</button>
+                      </div>
+
+                      <!--comment section-->
+
+
+                      <ul class="list-group list-group-light list-group-small mb-5" id="commentList">
+                        <h5>comments: </h5>
+                        <!--<li class="list-group-item">An item</li>-->
+                        
+                      </ul>
+                      <div class="form-outline" id="commentSection">
+                        <textarea class="form-control" id="commentInput" rows="4"></textarea>
+                        <label class="form-label" for="textAreaExample">Leave a comment</label>
+                      </div>
+                      <div class="m-4 text-center">
+                        <button type="submit" class="btn btn-danger" id="commentSubmit">comment</button>
+                      </div>
+                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section>
+          <form>
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for my newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form5Example27" class="form-control" />
+                  <label class="form-label" for="form5Example27">Mario@example.com</label>
+                </div>
+              </div>
+              <!--Grid column-->
+              
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-danger mb-4">
+                  Subscribe
+                </button>
+              </div>
+              
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-dark">
+        © 2023 Copyright:
+        <a class="text-light" href="https://www.ea.com/en-gb" target="_blank">Electronic Arts</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+
+    
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"> </script>
+    <!--my javscript-->
+    <script type="text/javascript" src="js/myJs.js"></script>
+  </body>
+</html>

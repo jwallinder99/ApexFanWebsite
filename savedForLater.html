@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends - My Favourite Game</title>
+    <style>
+        section{
+            padding: 60px 0;
+        }
+     </style>
+      <!-- Apex icon -->
+      <link rel="icon" href="img/Apex-Legends-Emblem.png" type="image/x-icon" />
+      <!-- Font Awesome -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      />
+      <!-- Google Fonts Roboto -->
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      />
+      <!-- MDB -->
+      <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+<body onload ="loadSavedArticles()">
+    <!---navbar component from mdb--->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!--changed from fluid to xxl-->
+      <div class="container-xxl">
+        <a href="#intro" CLASS="navbar-brand">
+          <span class="fw-light text-light py-3" > 
+            <img
+            src="img/Apex-Legends-Emblem.png"
+            class="me-2"
+            height="40"
+            alt="Apex Legends"
+            loading="lazy"
+          />
+              Apex Legends - My favorite game
+
+          </span>
+      </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!---navbar links-->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./legends.html">A Look at Some of the Legends</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./savedForLater.html">Saved for Later</a>
+            </li>
+          
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    <section>
+      <div class="container">
+        <div class="row align-items-center">              
+          <div class="text-center text-md-start">
+            <div class="text-center">
+               <ul class="list-group list-group-light savedForLaterList" id="savedForLater">
+                
+               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+      <footer class="text-center fixed-bottom">
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-dark">
+          © 2023 Copyright: Electronic Arts
+          <a class="text-light" href="https://www.ea.com/en-gb" target="_blank">Electronic Arts</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"> </script>
+    <!--my javscript-->
+    <script type="text/javascript" src="js/myJs.js"></script>
+  </body>
+</html>

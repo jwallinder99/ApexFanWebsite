@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends - My Favourite Game</title>
+    <style>
+        section{
+            padding: 60px 0;
+        }
+     </style>
+      <!-- Apex icon -->
+      <link rel="icon" href="img/Apex-Legends-Emblem.png" type="image/x-icon" />
+      <!-- Font Awesome -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      />
+      <!-- Google Fonts Roboto -->
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      />
+      <!-- MDB -->
+      <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+<body onload ="onLoad()">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!--changed from fluid to xxl-->
+      <div class="container-xxl">
+        <a href="./index.html" CLASS="navbar-brand">
+          <span class="fw-light text-light py-3" > 
+            <img
+            src="img/Apex-Legends-Emblem.png"
+            class="me-2"
+            height="40"
+            alt="Apex Legends"
+            loading="lazy"
+          />
+              Apex Legends - My favorite game
+
+          </span>
+      </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!---navbar links-->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./legends.html">A Look at Some of the Legends</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./savedForLater.html">Saved for Later</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+        <!--intro-->
+
+    <section id="aboutintro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                        <div class="display-2">Apex Legends</div>
+                        <div class="display-5 text-muted">The Best Battle Royale</div>
+                    <p class="lead my-4 text-muted">Apex Legends is a fast paced, battle royale shooter where 20 teams of 3 players drop into one of the beautiful maps and battle it out to be the last team standing. Players can choose from a growing roster of 23 legends to play as, all with their own unique abilities</p>
+                   
+                </div>      <!--display image only if screen is big enough-->
+                <div class="col-md-5 text-center d-none d-md-block">
+                    
+                    <span>
+                        <img class="img-fluid" src="img/Apex-Legends-Emblem.png" alt="Apex Legends Logo">
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jumbotron -->
+        <div 
+        class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+        style="background-image: url('https://esi.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTk3NDExMzcwNDExNTAxNDY3/apex-bunch-of-legends.png');"
+        >
+        <h1 class="mb-3 h2" style="text-shadow: 1px 1px black;">Choose Your Legend</h1>
+
+        <p style="text-shadow: 1px 1px black;">
+        In the Apex Games, a diverse array of characters, including outlaws, soldiers, misfits, and misanthropes, with their unique skill sets, are invited to compete. If you can endure and excel, you earn the esteemed title of a Legend.
+        </p>
+        </div>
+
+
+    <!--map carousel-->
+
+    <section id="maps" class="bg-light">
+      <div class="text-center">
+        <div class="display-3">Seasonal Map Rotations</div>
+          <p class="lead my-4 text-muted">Apex Legends features 5 huge maps each with their own unique features</p>
+            <div class="container my-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+                <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="3"
+                    aria-label="Slide 4"
+                ></button>
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="4"
+                    aria-label="Slide 5"
+                ></button>
+                </div>
+
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/defiance-olympuas-map-update/apex-legends-screenshots-s12-map-sabotagedolympus-b-clean-min.png.adapt.crop191x100.628p.png" class="d-block w-100" alt="Birds eye view of Olympus from Apex Legends"/>
+                    <div class="carousel-caption d-none d-md-block" style="text-shadow: 1px 1px black;">
+                        <h5>Olympus</h5>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://primagames.com/wp-content/uploads/2023/05/kings-canon.jpg" class="d-block w-100" alt="Birds eye view of World's Edge from Apex Legends"/>
+                    <div class="carousel-caption d-none d-md-block" style="text-shadow: 1px 1px black;">
+                        <h5>World's Edge</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.svg.com/img/gallery/how-can-i-play-the-old-map-in-apex-legends/intro-1582566410.jpg" class="d-block w-100" alt="Birds eye view of King's Canyon from Apex Legends"/>
+                    <div class="carousel-caption d-none d-md-block" style="text-shadow: 1px 1px black;">
+                        <h5>King's Canyon</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/legacy/maps/apex-media-maps-stormpoint-xl-l-m.jpg.adapt.320w.jpg" class="d-block w-100" alt="Birds eye view of Storm Point from Apex Legends"/>
+                    <div class="carousel-caption d-none d-md-block" style="text-shadow: 1px 1px black;">
+                        <h5>Storm Point</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/broken-moon/final-broken-moon-overhead-shot-v2.jpg.adapt.crop191x100.628p.jpg" class="d-block w-100" alt="Birds eye view of Storm Point from Apex Legends"/>
+                    <div class="carousel-caption d-none d-md-block" style="text-shadow: 1px 1px black;">
+                        <h5>Broken Moon</h5>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div> 
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="card p-3">
+              <div class="card-body">
+                <p>The maps in Apex Legends all have their own unique features, and provide a massive play area for all 60 players. The developers of the game rotate the maps around each season so that you are only ever playing three out of the current selection of five maps, so that they can update the other maps to keep them feeling fresh. 
+                  Every once in a while a new map is released.</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!--cards-->
+
+    <section id="aboutcards" class="px-5">
+        <div class="container">
+            <div class="display-3 text-center">How to Play</div>
+            <img src="img/apex-embed-about-legends.png" alt="apex legends art" class="img-fluid">
+            
+            <div class="row my-5 align-items-center justify-content-center g-3">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                    <div class="card h-100"  id="./about#drop-article">
+                        <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/apex-legends/3/3b/Team_Landing.jpg" class="card-img-top" alt="A squad landing in Apex Legends"/>
+                        <div class="card-body">
+                            <h5 class="card-title">Drop into the map with your squad</h5>
+                            <p class="card-text">The game starts with every team in the dropship, which flys over the map. Each team drops at a point of interest, either safely, or teams will contest points of interest, land together, and start fighting immediately</p>
+                        </div>
+                        <div class="p-2 position-relative mt-5">                                                               <!---Unique data-id's for each 'save' button-->
+                          <button type="button" class="btn btn-outline-secondary save-button position-absolute bottom-0 end-0 m-4" data-mdb-ripple-color="dark" data-id="fluid-fast-gameplay-article">Save for later</button>
+                          <button class="like-button btn btn-danger btn-floating m-3"><i class="far fa-heart fa-2x"></i></button>
+                        </div> 
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100" id="./about#loot-article">
+                        <img src="https://cdn.mos.cms.futurecdn.net/2CxQZgSiBvwPLbKquwJBtc.jpg" class="card-img-top" alt="Someone looting a gold item in Apex Legends"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Loot Up</h5>
+                        <p class="card-text">Once teams land on the map, they begin searching for loot located in various places around the map, including supply boxes that are scattered around.</p>
+                        </div>
+                        <div class="p-2 position-relative mt-5">                                                               <!---Unique data-id's for each 'save' button-->
+                          <button type="button" class="btn btn-outline-secondary save-button position-absolute bottom-0 end-0 m-4" data-mdb-ripple-color="dark" data-id="fluid-fast-gameplay-article">Save for later</button>
+                          <button class="like-button btn btn-danger btn-floating m-3"><i class="far fa-heart fa-2x"></i></button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100" id="./about#rotate-article">
+                        <img src="img/gunfight.png" class="card-img-top" alt="A gunfight in Apex Legends"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Rotate Towards the Safe Zone</h5>
+                        <p class="card-text">
+                            The maps in Apex Legends are huge, and in order for the game to continue there are different phases of the game where the area of play gets smaller and smaller each time, forcing teams to run in to each other. If they are outside the safe zone, they will start taking damage, and as each phase goes by, this amount of damage increases to the point where you will die if you are not in the zone
+                        </p>
+                        </div>
+                        <div class="p-2 position-relative mt-5">                                                               <!---Unique data-id's for each 'save' button-->
+                          <button type="button" class="btn btn-outline-secondary save-button position-absolute bottom-0 end-0 m-4" data-mdb-ripple-color="dark" data-id="fluid-fast-gameplay-article">Save for later</button>
+                          <button class="like-button btn btn-danger btn-floating m-3"><i class="far fa-heart fa-2x"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Form -->
+          <section>
+            <form>
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Sign up for my newsletter</strong>
+                  </p>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form5Example27" class="form-control" />
+                    <label class="form-label" for="form5Example27">Mario@example.com</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-danger mb-4">
+                    Subscribe
+                  </button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>
+          <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-dark">
+          © 2023 Copyright:
+          <a class="text-light" href="https://www.ea.com/en-gb" target="_blank">Electronic Arts</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"> </script>
+    <script type="text/javascript" src="js/myJs.js"></script>
+</body>
+</html>
