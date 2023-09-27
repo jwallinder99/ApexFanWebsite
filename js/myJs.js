@@ -1,8 +1,12 @@
 //inititalise empty array to hold saved articles/images
 let savedData = [];
+let savedImages = [];
 if(localStorage.length != 0){
   savedData = JSON.parse(localStorage.getItem("savedForLater"))
+  savedImages = JSON.parse(localStorage.getItem("savedImages"))
 }
+
+
 
 //get all instances of elements in the document with the class name 'save-button'
 let saveButtons = document.querySelectorAll(".save-button")
@@ -13,11 +17,13 @@ const onLoad = () => {
   if(localStorage.getItem("hasCodeRunBefore") === null){
     //put savedData (savedforlater array) into local storage as string
     localStorage.setItem("savedForLater", JSON.stringify(savedData));
+    localStorage.setItem("savedImages", JSON.stringify(savedImages));
     //put a new object "hasCodeRunBefore" with the key of true to check if code has run on load
     localStorage.setItem("hasCodeRunBefore", true)
   }
     
 }
+
 //function to load saved articles
 const loadSavedArticles = () => {
   //update array to current array in local storage
@@ -62,10 +68,56 @@ const loadSavedArticles = () => {
       console.log(savedForLaterList);
       //append new element to list
       savedForLaterList.appendChild(listItem)
+      
+      
   })
-
+  //same process as above but slightly modified to build a card with an image
+  savedImages = JSON.parse(localStorage.getItem("savedImages"))
+  savedImages.forEach(img =>{
+    const listItem = document.createElement('li')
+    listItem.classList.add('list-group-item')
+    const listCard = document.createElement('div')
+    listCard.classList.add('card')
+    listItem.appendChild(listCard)
+    const cardImg = document.createElement('img')
+    listCard.appendChild(cardImg)
+    cardImg.src = img.imgSrc
+    const imgList = document.getElementById('savedImages')
+    imgList.appendChild(listItem)
+  })
 }
+
+
+let imageSaveButtons = document.querySelectorAll('.image-save-button')
+
+  imageSaveButtons.forEach(btn => {
+    btn.addEventListener('click', function(){
+      const closestImage = this.closest('.bg-image')
+      const image = closestImage.querySelector('img')
+      const imgId = image.getAttribute('id')
+      const imgSrc = image.getAttribute('src')
+      const isImageSaved = savedImages.some(img => img.imgId === imgId);
+      if(!isImageSaved) {
+        savedImages.push({
+          imgId: imgId,
+          imgSrc: imgSrc
+        })
+        localStorage.setItem("savedImages", JSON.stringify(savedImages))
+      } else {
+        alert("Image has already been saved")
+      }
+          toggleLike(btn);
+          initializeButtonState(btn);
+    });
+
+    // Initialize button state on page load
     
+    
+  });
+
+  
+
+
 // forEach on the returned nodeList array in order to add an event listener to each button
 saveButtons.forEach(button => {
     // Add an event listener to each button
@@ -100,6 +152,8 @@ saveButtons.forEach(button => {
       }
     });
 });
+
+
 
 //code to handle comment section
 
@@ -194,3 +248,4 @@ likeButtons.forEach(button => {
 
 
 
+//
